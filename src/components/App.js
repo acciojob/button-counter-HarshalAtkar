@@ -7,7 +7,7 @@ const App = () => {
   const count=0;
   
   increment(){
-     count=count+1;
+     this.satState=count+1;
   }
   return (
   
