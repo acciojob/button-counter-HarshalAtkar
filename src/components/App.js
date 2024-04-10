@@ -1,22 +1,22 @@
 
 import React from "react";
 import './../styles/App.css';
+import React, { useState } from 'react';
+
 
 const App = () => {
-  
-  const count=0;
-  
-  increment(){
-     this.satState=count+1;
-  }
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
   return (
-  
-
     <div>
-       <p>Button clicked {this.count} times</p>
-       <button onClick={this.increment}>Increment</button>
+      <p>Button clicked {count} times</p>
+      <button onClick={increment}>Increment</button>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
